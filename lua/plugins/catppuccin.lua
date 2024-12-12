@@ -1,0 +1,122 @@
+return {
+  "catppuccin/nvim",
+  name = "catppuccin",
+  priority = 1000,
+  config = function()
+    require("catppuccin").setup({
+      background = {
+        light = "latte",
+        dark = "mocha",
+      },
+      color_overrides = {
+        -- mocha = {
+        -- 	rosewater = "#ffc4bd",
+        -- 	flamingo = "#D45966",
+        -- 	pink = "#ff75a0",
+        -- 	mauve = "#ffbf00",
+        -- 	red = "#f05247",
+        -- 	maroon = "#ff781f",
+        -- 	peach = "#c6a3c8",
+        -- 	-- yellow = "#fef462",
+        -- 	-- yellow = "#e9b153",
+        -- 	yellow = "#F7E5b0",
+        -- 	-- green = "#aaa741",
+        -- 	-- teal = "#8bba7f",
+        -- 	sky = "#6ebfa7",
+        -- 	sapphire = "#689d6a",
+        -- 	blue = "#b0764f",
+        -- 	lavender = "#e8c387",
+        -- 	text = "#F3E5D0",
+        -- 	subtext1 = "#e2cca9",
+        -- 	subtext0 = "#e2cca9",
+        -- 	overlay2 = "#8C7A58",
+        -- 	overlay1 = "#735F3F",
+        -- 	overlay0 = "#806234",
+        -- 	surface2 = "#665c54",
+        -- 	surface1 = "#3c3836",
+        -- 	surface0 = "#32302f",
+        -- 	base = "#202020",
+        -- 	mantle = "#1d2021",
+        -- 	crust = "#1b1b1b",
+        --
+        -- 	green = "#8bba7f",
+        -- 	teal = "#aaa741",
+        -- },
+        -- mocha = {
+        --   rosewater = "#f66151",
+        --   flamingo = "#c061cb",
+        --   pink = "#c061cb",
+        --   mauve = "#c061cb",
+        --   red = "#e01b24",
+        --   maroon = "#f66151",
+        --   peach = "#ffa348",
+        --   yellow = "#F5C211",
+        --   green = "#33d17a",
+        --   teal = "#54DBF6",
+        --   sky = "#62a0ea",
+        --   sapphire = "#62a0ea",
+        --   blue = "#62a0ea",
+        --   lavender = "#c061cb",
+        --   text = "#ffffff",
+        --   subtext1 = "#deddda",
+        --   subtext0 = "#c0bfbc",
+        --   overlay2 = "#858585",
+        --   overlay1 = "#737373",
+        --   overlay0 = "#616161",
+        --   surface2 = "#4f4f4f",
+        --   surface1 = "#3e3e3e",
+        --   surface0 = "#2e2e2e",
+        --   base = "#1E1E1E",
+        --   mantle = "#1A1A1A",
+        --   crust = "#101010",
+        -- },
+        macchiato = {
+          rosewater = "#ff60c0",
+          flamingo = "#ff60c0",
+          -- pink = "#c03030",
+          pink = "#ffbb00",
+          peach = "#80f0ff",
+
+          --red is for in built-in stuff console, Math
+          red = "#ff5010",
+          --maroon is for function arguments
+          maroon = "#d03030",
+          -- maroon = "#00ff00",
+          -- mayve is for declaration keywords const, let, var, and other logical keywords if else, return
+          -- mauve = "#d080FF",
+          mauve = "#30f030",
+          -- green is for strings
+          -- green = "#ffc000",
+          green = "#00ff00",
+
+          teal = "#80f0ff",
+          -- operators, arrows ...
+          sky = "#80f0ff",
+          sapphire = "#80f0ff",
+
+          blue = "#c0c0c0",
+          lavender = "#c0c0c0",
+          yellow = "#707070",
+          text = "#ffffff",
+          -- overlay2 is blocks () {} [] and . ,
+          overlay2 = "#e03030",
+          -- overlay2 = "#00ff00",
+
+          subtext1 = "#e5d5b1",
+          subtext0 = "#c5bda3",
+          overlay1 = "#a39284",
+          overlay0 = "#504040",
+          surface2 = "#5d5d5d",
+          surface1 = "#505050",
+          surface0 = "#393939",
+          base = "#000000",
+          mantle = "#202020",
+          crust = "#101010",
+        },
+      },
+    })
+    vim.api.nvim_command("colorscheme catppuccin-macchiato")
+    vim.opt.signcolumn = "yes"
+    vim.opt.numberwidth = 4
+  end,
+}

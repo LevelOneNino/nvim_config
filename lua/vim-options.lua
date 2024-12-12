@@ -156,7 +156,7 @@ vim.cmd([[
   highlight NormalNC guibg=none
   highlight Visual guibg=#2e3238 guifg=#00FF00
 
-  highlight @ibl.whitespace.char.2 guibg=#13141b
+  highlight @ibl.whitespace.char.2 guibg=#101319
   highlight @ibl.whitespace.char.1 guibg=#131720
 
   highlight LineNr guifg=#505070 guibg=#101319

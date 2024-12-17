@@ -28,9 +28,9 @@ return {
 				lualine_y = {},
 				lualine_x = { { "macro_recording", "%S" }, { "filetype", color = { fg = "#FFFFFF", bg = "none" } } },
 			},
-			tabline = {
-				lualine_x = { { "datetime", color = { fg = "#00FFFF", bg = "none" } }, battery },
-			},
+			-- tabline = {
+			-- 	lualine_x = { { "datetime", color = { fg = "#00FFFF", bg = "none" } }, battery },
+			-- },
 		})
 	end,
 }

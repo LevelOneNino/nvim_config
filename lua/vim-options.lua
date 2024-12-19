@@ -12,7 +12,7 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set colorcolumn=112,224,336,448,560")
 vim.cmd("set wrap")
 
-vim.cmd("set foldlevel=1")
+vim.cmd("set foldlevel=99")
 vim.cmd("set viewoptions=folds,cursor")
 
 vim.cmd([[
